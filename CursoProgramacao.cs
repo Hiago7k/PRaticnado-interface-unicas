@@ -5,10 +5,11 @@ internal class CursoProgramacao : ICurso
     public Instrutor instrutor;
     public string NomeDoCurso { get; set; }
 
-    public CursoProgramacao(Instrutor instrutor, string nomedocruso)
+    public CursoProgramacao( string nomedocruso, Instrutor instrutor)
     {
-        this.instrutor = instrutor;
         NomeDoCurso = nomedocruso;
+        this.instrutor = instrutor;
+        
     }
 
     public void ValidarConteudo()
@@ -18,6 +19,6 @@ internal class CursoProgramacao : ICurso
 
     public void PublicarCurso()
     {
-        Console.WriteLine($"Curso publicado com sucesso: C# {NomeDoCurso} {instrutor.Especialidade}");
+        Console.WriteLine($"Curso publicado com sucesso: C# {instrutor.Nome} {instrutor.Especialidade}");
     }
 }

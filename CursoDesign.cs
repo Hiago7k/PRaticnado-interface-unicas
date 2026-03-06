@@ -19,6 +19,6 @@ internal class CursoDesign : ICurso
 
     public void PublicarCurso()
     {
-        Console.WriteLine($"Curso publicado com sucesso: DE DESIGN {NomeDoCurso} {instrutor.Especialidade}");
+        Console.WriteLine($"Curso publicado com sucesso: DE DESIGN {instrutor.Nome} {instrutor.Especialidade}");
     }
 }
