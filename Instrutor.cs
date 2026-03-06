@@ -2,14 +2,14 @@
 
 internal class Instrutor
 {
-    public Instrutor(string nome, string instrutor)
+    public Instrutor(string nome, string specialidade)
     {
         Nome = nome;
-        Instrutor = instrutor;
+        Especialidade = specialidade;
     }
 
     public string Nome { get; }
-    public string Instrutor { get; }
+    public string Especialidade { get; }
 
 
 }
